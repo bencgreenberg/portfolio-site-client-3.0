@@ -1,5 +1,5 @@
 import Typed from 'react-typed';
-import { greetingArray } from '../logic/greetingArray';
+import { greetingArray } from '../data/greetingArray';
 
 const Header = () => {
   return (
@@ -16,11 +16,11 @@ const Header = () => {
         Ben Greenberg: <br /><div id="greeting-scroll"><Typed 
         strings={greetingArray} 
         loop={true} 
-        typeSpeed={180}
-        backSpeed={40}
+        typeSpeed={100}
+        backSpeed={120}
         smartBackspace
         shuffle={false}
-        backDelay={1000}
+        backDelay={500}
         showCursor
         cursorChar="|"
       /></div>

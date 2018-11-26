@@ -11,11 +11,14 @@ export default () => (
       <meta property="og:description" content="Rabbi turned Coder. Second Career Dev taking it one function at a time." />
     </Head>
     <style jsx global>{`
-     @import url('https://fonts.googleapis.com/css?family=Caveat:700|Chakra+Petch:500');
+     @import url('https://fonts.googleapis.com/css?family=Caveat:700|Chakra+Petch:500|Montserrat:700');
       /* grid */
       .header {
         grid-area: header;
         position: relative;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3vw;
+        text-decoration: underline;
       }
       .content {
         grid-area: content;
@@ -111,7 +114,7 @@ export default () => (
       width: 100%;
     }
 
-    .content-title {
+    .content-title, .portfolio-content-title {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -121,6 +124,92 @@ export default () => (
       font-family: 'Chakra Petch', sans-serif;
       text-decoration: none;
       font-size: 2.5vw;
+    }
+
+    /* portfolio */
+    .portfolio-content-title a {
+      font-family: 'Chakra Petch', sans-serif;
+      text-decoration: none;
+      font-size: 1.2vw;
+    }
+
+    /* talks */
+
+    .talks-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   
+    }
+    
+    .upcoming-wrapper {
+    }
+
+    .past-wrapper {
+    }
+
+    .upcoming-title {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .past-title {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .conference-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    .conference-box {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: left;
+      position: relative;
+      flex-basis: calc(33.333% - 10px);
+      margin: 5px;
+      /*border: 1px solid;*/
+      box-sizing: border-box;
+    }
+    .conference-box::before {
+      content: '';
+      display: block;
+      padding-top: 30%;
+    }
+    .conference-box .conference-content {
+      position: absolute;
+      top: 0; left: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    .content-title, .portfolio-content-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content-title a {
+      font-family: 'Chakra Petch', sans-serif;
+      text-decoration: none;
+      font-size: 2.5vw;
+    }
+
+    .talk-title {
+      padding-bottom: 10px;
+    }
+    .talk-title a {
+      font-family: 'Chakra Petch', sans-serif;
+      text-decoration: none;
+      font-size: 1.2vw;
     }
     `}</style>
   </div>

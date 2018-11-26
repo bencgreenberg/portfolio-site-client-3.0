@@ -1,23 +1,23 @@
 import Link from 'next/link';
 import { CircleLoader } from 'react-spinners';
 import Head from '../components/head';
-import ContentCard from '../components/contentcard';
+import PortfolioCard from '../components/portfoliocard';
 import { getApiData } from '../logic/api_func';
 
-class Blog extends React.Component {
+class Portfolio extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      blogPosts: [],
+      portfolioPosts: [],
       loading: true
     };
 
   }
 
   componentDidMount() {
-    getApiData('https://cors-anywhere.herokuapp.com/https://bengreenberg.herokuapp.com/api/blog/tech.json')
+    getApiData('https://cors-anywhere.herokuapp.com/https://bengreenberg.herokuapp.com/api/portfolio/index.json')
       .then(data => this.setState({
-        blogPosts: data,
+        portfolioPosts: data,
         loading: false
       }));
     // for locahost development with cors: https://cors-anywhere.herokuapp.com/
@@ -25,12 +25,12 @@ class Blog extends React.Component {
 
   render() {
 
-    let sortedBlog =
-    this.state.blogPosts.sort(function(posting1, posting2) {
+    let sortedPortfolio =
+    this.state.portfolioPosts.sort(function(posting1, posting2) {
       return posting2.id - posting1.id;
     });
 
-    let blogcard = sortedBlog.length > 0 ? sortedBlog.map(post => <ContentCard title={post.title} link={post.original_link} image={post.image} created_on={post.created_on} key={post.id} />) : <CircleLoader size={200} loading={this.state.loading} />
+    let portfoliocard = sortedPortfolio.length > 0 ? sortedPortfolio.map(post => <PortfolioCard title={post.name} link={post.website_link} image={post.image} github={post.link} youtube={post.youtube_link} blog={post.blog_link} key={post.id} />) : <CircleLoader size={200} loading={this.state.loading} />
 
     return (
       <div>
@@ -40,14 +40,14 @@ class Blog extends React.Component {
            
             `}</style>
           <div className="header">
-             Blog Posts
+            Portfolio
           </div>
           <div className="blogcards-wrapper">
-            {blogcard}
+            {portfoliocard}
           </div>
           <div className="navbar box">
             <Link as="/" href="/"><a href="/" className="button">Home</a></Link>
-            <Link as="/portfolio" href="/portfolio"><a href="/portfolio" className="button">Portfolio</a></Link>
+            <Link as="/blog" href="/blog"><a href="/blog" className="button">Blog</a></Link>
             <Link as="/talks" href="/talks"><a href="/talks" className="button">Talks</a></Link>
           </div>
         </div>
@@ -55,4 +55,4 @@ class Blog extends React.Component {
     );
   }
 }
-export default Blog;
+export default Portfolio;
