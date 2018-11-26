@@ -1,5 +1,5 @@
 import Typed from 'react-typed';
-import { greetingArray } from './greetingArray';
+import { greetingArray } from '../logic/greetingArray';
 
 const Header = () => {
   return (
