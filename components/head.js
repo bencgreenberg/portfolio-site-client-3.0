@@ -26,7 +26,7 @@ export default () => (
       }
       .navbar {
         grid-area: navbar;
-        position: relative;
+        flex-shrink: 0;
       }
       .socialbar {
         grid-area: socialbar;
@@ -39,6 +39,7 @@ export default () => (
         grid-template-areas: "header header header" "content content content" "navbar navbar navbar" "socialbar socialbar socialbar";
         background-color: #fff;
         color: #444;
+        flex: 1;
       }
       .box {
         display: flex;
@@ -138,6 +139,7 @@ export default () => (
     .talks-wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      padding-bottom: 300px;
    
     }
     
@@ -212,6 +214,22 @@ export default () => (
       font-family: 'Chakra Petch', sans-serif;
       text-decoration: none;
       font-size: 1.2vw;
+    }
+
+    .talk-conference {
+      font-size: 0.8vw;
+    }
+
+    @media (min-width: 320px) and (max-width: 480px) {
+  
+      .talk-conference {
+        font-size: 1vw;
+      }
+
+      .conference-box::before {
+        margin: 20px;
+      }
+      
     }
     `}</style>
   </div>
