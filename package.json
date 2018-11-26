@@ -1,15 +1,16 @@
 {
   "name": "portfolio-site-client-v2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Portfolio site frontend designed with Next.js.",
   "main": "index.js",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ben Greenberg",
   "license": "ISC",
   "dependencies": {
     "next": "^7.0.2",
