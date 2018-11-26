@@ -17,6 +17,7 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-emojione": "^5.0.0",
+    "react-spinners": "^0.4.7",
     "react-typed": "^1.1.0"
   }
 }

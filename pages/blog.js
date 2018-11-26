@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { CircleLoader } from 'react-spinners';
 import Head from '../components/head';
 import ContentCard from '../components/contentcard';
 import { getApiData } from '../logic/api_func';
@@ -7,7 +8,8 @@ class Blog extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      blogPosts: []
+      blogPosts: [],
+      loading: true
     };
 
   }
@@ -15,7 +17,8 @@ class Blog extends React.Component {
   componentDidMount() {
     getApiData('https://cors-anywhere.herokuapp.com/https://bengreenberg.herokuapp.com/api/blog/tech.json')
       .then(data => this.setState({
-        blogPosts: data
+        blogPosts: data,
+        loading: false
       }));
     // for locahost development with cors: https://cors-anywhere.herokuapp.com/
   }
@@ -27,7 +30,7 @@ class Blog extends React.Component {
       return posting2.id - posting1.id;
     });
 
-    let blogcard = sortedBlog.length > 0 ? sortedBlog.map(post => <ContentCard title={post.title} link={post.original_link} image={post.image} created_on={post.created_on} key={post.id} />) : "Blog posts loading..."
+    let blogcard = sortedBlog.length > 0 ? sortedBlog.map(post => <ContentCard title={post.title} link={post.original_link} image={post.image} created_on={post.created_on} key={post.id} />) : <CircleLoader size={200} loading={this.state.loading} />
 
     return (
       <div>
