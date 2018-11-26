@@ -153,6 +153,7 @@ export default () => (
       align-items: center;
       justify-content: center;
       font-family: 'Montserrat', sans-serif;
+      font-size: 1vw;
     }
 
     .past-title {
@@ -161,6 +162,7 @@ export default () => (
       align-items: center;
       justify-content: center;
       font-family: 'Montserrat', sans-serif;
+      font-size: 1vw;
     }
 
     .conference-wrapper {
