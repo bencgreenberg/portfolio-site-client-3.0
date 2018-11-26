@@ -3,9 +3,11 @@ export const greetingArray = [
   '👨‍💻 Programmer.',
   '🥑 Advocate.', 
   '💻 Techie.',
+  '👨‍👩‍👦‍👦 Father.',
   '☕ Coffee Addict.',
   '🎉 Rubyist.', 
   '👨‍🏫 Educator.',
+  '🥙 Falafel Fan.',
   '👨‍💻 Coder.',
   '📚 Writer.',
   '🛫 Traveler.'

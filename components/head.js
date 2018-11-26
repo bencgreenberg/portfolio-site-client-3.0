@@ -3,9 +3,12 @@ import Head from 'next/head';
 export default () => (
   <div>
     <Head>
-      <title>Ben Greenberg 🥑🧔☕👨‍💻🛫  </title>
+      <title>Ben Greenberg 🥑🧔☕👨‍💻🛫 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta charSet="utf-8" />
+      <meta property="og:title" content="Ben Greenberg 🥑🧔☕👨‍💻🛫 " />
+      <meta property="og:image" content="/static/bg-headshot.jpg" />
+      <meta property="og:description" content="Rabbi turned Coder. Second Career Dev taking it one function at a time." />
     </Head>
     <style jsx global>{`
      @import url('https://fonts.googleapis.com/css?family=Caveat:700|Chakra+Petch:500');
