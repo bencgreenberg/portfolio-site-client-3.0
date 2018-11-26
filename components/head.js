@@ -7,7 +7,7 @@ export default () => (
       <meta charSet="utf-8" />
     </Head>
     <style jsx global>{`
-     @import url('https://fonts.googleapis.com/css?family=Caveat:700');
+     @import url('https://fonts.googleapis.com/css?family=Caveat:700|Chakra+Petch:500');
       /* grid */
       .header {
         grid-area: header;
@@ -105,6 +105,18 @@ export default () => (
       top: 0; left: 0;
       height: 100%;
       width: 100%;
+    }
+
+    .content-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content-title a {
+      font-family: 'Chakra Petch', sans-serif;
+      text-decoration: none;
+      font-size: 2.5vw;
     }
     `}</style>
   </div>

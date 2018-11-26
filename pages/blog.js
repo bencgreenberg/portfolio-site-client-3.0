@@ -42,8 +42,8 @@ class Blog extends React.Component {
             {blogcard}
           </div>
           <div className="navbar box">
+            <Link as="/"><a href="/" className="button">Home</a></Link>
             <Link as="/portfolio"><a href="/portfolio" className="button">Portfolio</a></Link>
-            <Link as="/blog"><a href="/blog" className="button">Blog</a></Link>
             <Link as="/talks"><a href="/talks" className="button">Talks</a></Link>
           </div>
         </div>
