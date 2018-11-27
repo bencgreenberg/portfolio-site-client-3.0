@@ -2,9 +2,15 @@ import Head from '../components/head';
 import Link from 'next/link';
 import {talks} from '../data/talksdata';
 import TalksCard from '../components/talkscard';
+import ReactGA from 'react-ga';
+import { ga_id } from '../config_vars';
 
 class Talks extends React.Component {
   render() {
+
+  // google analytics
+  process.env.NODE_ENV == 'development' ? ReactGA.initialize(ga_id) : ReactGA.initialize(ENV['ANALYTICS_ID'])
+  ReactGA.pageview('/talks');
 
     let upcomingTalks = talks.filter(talk => {
       return talk.presented == false

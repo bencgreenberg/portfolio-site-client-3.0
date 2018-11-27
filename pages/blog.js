@@ -3,6 +3,8 @@ import { CircleLoader } from 'react-spinners';
 import Head from '../components/head';
 import ContentCard from '../components/contentcard';
 import { getApiData } from '../logic/api_func';
+import ReactGA from 'react-ga';
+import { ga_id } from '../config_vars';
 
 class Blog extends React.Component {
   constructor(props) {
@@ -24,6 +26,10 @@ class Blog extends React.Component {
   }
 
   render() {
+
+    // google analytics
+    process.env.NODE_ENV == 'development' ? ReactGA.initialize(ga_id) : ReactGA.initialize(ENV['ANALYTICS_ID'])
+    ReactGA.pageview('/blog');
 
     let sortedBlog =
     this.state.blogPosts.sort(function(posting1, posting2) {
