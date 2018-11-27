@@ -15,7 +15,7 @@ class Portfolio extends React.Component {
   }
 
   componentDidMount() {
-    getApiData('https://cors-anywhere.herokuapp.com/https://bengreenberg.herokuapp.com/api/portfolio/index.json')
+    getApiData('https://bengreenberg.herokuapp.com/api/portfolio/index.json')
       .then(data => this.setState({
         portfolioPosts: data,
         loading: false

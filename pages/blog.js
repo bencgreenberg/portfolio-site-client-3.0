@@ -15,7 +15,7 @@ class Blog extends React.Component {
   }
 
   componentDidMount() {
-    getApiData('https://cors-anywhere.herokuapp.com/https://bengreenberg.herokuapp.com/api/blog/tech.json')
+    getApiData('https://bengreenberg.herokuapp.com/api/blog/tech.json')
       .then(data => this.setState({
         blogPosts: data,
         loading: false
