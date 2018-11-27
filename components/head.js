@@ -28,6 +28,7 @@ export default () => (
         grid-area: navbar;
         flex-shrink: 0;
       }
+
       .socialbar {
         grid-area: socialbar;
         position: relative;
@@ -65,6 +66,7 @@ export default () => (
         padding: 8px 25px;
         margin: 0px 5px;
         text-decoration: none;
+        max-width: 100%;
     }
 
     .button:hover,
@@ -83,6 +85,15 @@ export default () => (
     .button a {
       text-decoration: none;
       color: black;
+    }
+
+    @media (min-width: 320px) and (max-width: 480px) {
+  
+      .button {
+        padding: 1px 10px;
+        margin: 0px 2px;
+      }
+      
     }
 
     /* blog */
@@ -127,11 +138,39 @@ export default () => (
       font-size: 2.5vw;
     }
 
+
+    @media (min-width: 320px) and (max-width: 480px) {
+
+      .blog-box {
+        align-items: left;
+        position: relative;
+        flex-basis: 100%;
+      }
+      .blog-box::before {
+        content: '';
+        display: block;
+        padding-top: 30%;
+      }
+      .content-title a {
+        font-size: 4vw;
+      }
+  
+    }
+
+
     /* portfolio */
+
     .portfolio-content-title a {
       font-family: 'Chakra Petch', sans-serif;
       text-decoration: none;
       font-size: 1.2vw;
+    }
+
+    @media (min-width: 320px) and (max-width: 480px) {
+      
+      .portfolio-content-title a {
+        font-size: 4vw;
+      }
     }
 
     /* talks */
@@ -179,7 +218,7 @@ export default () => (
       align-items: left;
       position: relative;
       flex-basis: calc(33.333% - 10px);
-      margin: 5px;
+      margin: 20px;
       /*border: 1px solid;*/
       box-sizing: border-box;
     }
@@ -210,7 +249,7 @@ export default () => (
     .talk-title {
       padding-bottom: 10px;
     }
-    .talk-title a {
+    .talk-title, .talk-title a {
       font-family: 'Chakra Petch', sans-serif;
       text-decoration: none;
       font-size: 1.2vw;
