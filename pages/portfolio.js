@@ -4,7 +4,7 @@ import Head from '../components/head';
 import PortfolioCard from '../components/portfoliocard';
 import { getApiData } from '../logic/api_func';
 import ReactGA from 'react-ga';
-import { ga_id } from '../config_vars';
+// import { ga_id } from '../config_vars';
 
 class Portfolio extends React.Component {
   constructor(props) {
@@ -28,7 +28,8 @@ class Portfolio extends React.Component {
   render() {
 
     // google analytics
-    process.env.NODE_ENV == 'development' ? ReactGA.initialize(ga_id) : ReactGA.initialize(ENV['ANALYTICS_ID'])
+    //process.env.NODE_ENV == 'development' ? ReactGA.initialize(ga_id) :
+    ReactGA.initialize(ENV['ANALYTICS_ID'])
     ReactGA.pageview('/portfolio');
 
     let sortedPortfolio =
