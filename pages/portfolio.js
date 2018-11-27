@@ -29,8 +29,8 @@ class Portfolio extends React.Component {
 
     // google analytics
     //process.env.NODE_ENV == 'development' ? ReactGA.initialize(ga_id) :
-    ReactGA.initialize(ENV['ANALYTICS_ID'])
-    ReactGA.pageview('/portfolio');
+    //ReactGA.initialize(ENV['ANALYTICS_ID'])
+    //ReactGA.pageview('/portfolio');
 
     let sortedPortfolio =
     this.state.portfolioPosts.sort(function(posting1, posting2) {

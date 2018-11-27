@@ -29,8 +29,8 @@ class Blog extends React.Component {
 
     // google analytics
     //process.env.NODE_ENV == 'development' ? ReactGA.initialize(ga_id) : 
-    ReactGA.initialize(ENV['ANALYTICS_ID'])
-    ReactGA.pageview('/blog');
+    //ReactGA.initialize(ENV['ANALYTICS_ID'])
+    //ReactGA.pageview('/blog');
 
     let sortedBlog =
     this.state.blogPosts.sort(function(posting1, posting2) {
