@@ -1,7 +1,6 @@
 export const greetingArray = [
   'Human.',
   'Programmer.',
-  'Advocate.', 
   'Techie.',
   'Father.',
   'React Admirer.',
