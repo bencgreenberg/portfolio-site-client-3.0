@@ -29,7 +29,7 @@ class Talks extends React.Component {
         <div className="talks-wrapper">
           <div className="upcoming-wrapper">
             <div className="upcoming-title"><h1>Upcoming Talks</h1></div>
-            {upcomingTalks.map(talk => { return <TalksCard 
+            {upcomingTalks.length > 0 ? upcomingTalks.map(talk => { return <TalksCard 
               title={talk.title} 
               location={talk.location} 
               date={talk.date} 
@@ -37,7 +37,7 @@ class Talks extends React.Component {
               presentation_link= {talk.presentation_link}
               conference_link={talk.conference_link}
               country_code={talk.country_code}
-              presented={talk.presented} />})
+              presented={talk.presented} />}) : "More talks coming soon!"
             }
           </div>
           <div className="past-wrapper">

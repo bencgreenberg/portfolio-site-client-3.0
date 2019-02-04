@@ -27,6 +27,6 @@ export const talks = [
     conference: 'Git Merge',
     presentation_link: '',
     conference_link: 'https://git-merge.com/',
-    presented: false
+    presented: true
   }
 ]
