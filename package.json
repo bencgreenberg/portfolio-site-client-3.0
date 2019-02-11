@@ -21,5 +21,6 @@
     "react-ga": "^2.5.5",
     "react-spinners": "^0.4.7",
     "react-typed": "^1.1.0"
-  }
+  },
+  "heroku-run-build-script": true
 }
