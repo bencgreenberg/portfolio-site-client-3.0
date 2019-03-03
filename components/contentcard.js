@@ -11,10 +11,15 @@ class ContentCard extends React.Component {
     };
 
     return (
-      <div className="blog-box">
-        <div className="blog-content" style={divStyle}>
-          <div className="content-title"><Link as="/blog-item" href={this.props.link}><a href={this.props.link} target="_new">{this.props.title}</a></Link></div>
-        </div>
+      <div className="blog-list">
+        <ul>
+          <li> 
+            <Link as="/blog-item" href={this.props.link}><a href={this.props.link} target="_new">
+              <img src={this.props.image} />
+              <h3>{this.props.title}</h3>
+            </a></Link>
+          </li>
+        </ul>
       </div>
     );
   }

@@ -42,21 +42,14 @@ class Blog extends React.Component {
     return (
       <div>
         <Head />
-        <div className="wrapper">
-          <style jsx>{`
-           
-            `}</style>
-          <div className="header">
-             Blog Posts
-          </div>
-          <div className="blogcards-wrapper">
-            {blogcard}
-          </div>
-          <div className="navbar box">
-            <Link as="/" href="/"><a href="/" className="button">Home</a></Link>
-            <Link as="/portfolio" href="/portfolio"><a href="/portfolio" className="button">Portfolio</a></Link>
-            <Link as="/talks" href="/talks"><a href="/talks" className="button">Talks</a></Link>
-          </div>
+        <div className="header">
+            Blog Posts
+        </div>
+          {blogcard}
+        <div className="navbar box">
+          <Link as="/" href="/"><a href="/" className="button">Home</a></Link>
+          <Link as="/portfolio" href="/portfolio"><a href="/portfolio" className="button">Portfolio</a></Link>
+          <Link as="/talks" href="/talks"><a href="/talks" className="button">Talks</a></Link>
         </div>
       </div>
     );

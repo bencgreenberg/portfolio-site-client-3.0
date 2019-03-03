@@ -54,7 +54,7 @@ class Portfolio extends React.Component {
           </div>
           <div className="navbar box">
             <Link as="/" href="/"><a href="/" className="button">Home</a></Link>
-            <Link as="/blog" href="/blog"><a href="/blog" className="button">Blog</a></Link>
+            <Link as="/posts" href="/posts"><a href="/posts" className="button">Blog</a></Link>
             <Link as="/talks" href="/talks"><a href="/talks" className="button">Talks</a></Link>
           </div>
         </div>

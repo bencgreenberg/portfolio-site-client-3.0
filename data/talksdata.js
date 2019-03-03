@@ -25,7 +25,7 @@ export const talks = [
     location: 'Brussels, Belgium',
     country_code: 'BE',
     conference: 'Git Merge',
-    presentation_link: '',
+    presentation_link: 'https://www.youtube.com/watch?list=PL0lo9MOBetEFqBue4vNcTEnkBjgIQU1Q3&v=NPE7rA5887c',
     conference_link: 'https://git-merge.com/',
     presented: true
   }

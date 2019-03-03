@@ -57,7 +57,7 @@ class Talks extends React.Component {
         <div className="navbar box">
             <Link as="/" href="/"><a href="/" className="button">Home</a></Link>
             <Link as="/portfolio" href="/portfolio"><a href="/portfolio" className="button">Portfolio</a></Link>
-            <Link as="/blog" href="/blog"><a href="/blog" className="button">Blog</a></Link>
+            <Link as="/posts" href="/posts"><a href="/posts" className="button">Blog</a></Link>
         </div>
       </div>
     );
