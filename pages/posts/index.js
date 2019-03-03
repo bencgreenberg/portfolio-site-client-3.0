@@ -42,11 +42,13 @@ export default class extends React.Component {
                 <div className="header">
                     <h1>Posts</h1>
                 </div>
-                {this.props.posts.map(({ document: { data }, slug }) => (
-                    <Link href={{ pathname: '/posts/post', query: { id: slug } }} key={slug}>
-                        <h2>{data.title}</h2>
-                    </Link>
-                ))}
+                <ol>
+                    {this.props.posts.map(({ document: { data }, slug }) => (
+                        <Link href={{ pathname: '/posts/post', query: { id: slug } }} key={slug}>
+                            <li><h2>{data.title}</h2></li>
+                        </Link>
+                    ))}
+                </ol>
                 <div className="navbar box">
                     <Link as="/" href="/"><a href="/" className="button">Home</a></Link>
                     <Link as="/portfolio" href="/portfolio"><a href="/portfolio" className="button">Portfolio</a></Link>
