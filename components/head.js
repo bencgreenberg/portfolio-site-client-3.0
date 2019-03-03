@@ -99,6 +99,32 @@ export default () => (
 
     /* blog */
 
+    .blog-header {
+    }
+
+    .blog-header .blog-header-image img {
+      width: 160px;
+      height: 160px;
+    }
+
+    .blog-header .blog-header-text {
+      font: x-large sans-serif;
+    }
+
+    .blog-header .blog-header-image, 
+    .blog-header .blog-header-text {
+      display: inline-block;
+      vertical-align: bottom;
+    }
+
+    .blog-post p {
+      font-size: 24px;
+    }
+
+    .blog-post h2 {
+      font-size: 36px;
+    }
+
     .blogcards-wrapper {
       display: flex;
       flex-wrap: wrap;
@@ -158,6 +184,34 @@ export default () => (
   
     }
 
+    /* code blocks in blog posts */
+
+    pre {
+      border-radius: 5px; 
+      -moz-border-radius: 5px; 
+      -webkit-border-radius: 5px;
+      border: 1px solid #BCBEC0;
+      background: #F1F3F5;
+      font:16px Monaco,Consolas,"Andale  Mono","DejaVu Sans Mono",monospace
+    }
+  
+    code {
+      border-radius: 5px; 
+      -moz-border-radius: 5px; 
+      -webkit-border-radius: 5px; 
+      border: 1px solid #BCBEC0;
+      padding: 2px;
+      font:16px Monaco,Consolas,"Andale  Mono","DejaVu Sans Mono",monospace
+    }
+  
+    pre code {
+      border-radius: 0px; 
+      -moz-border-radius: 0px; 
+      -webkit-border-radius: 0px; 
+      border: 0px;
+      padding: 2px;
+      font:16px Monaco,Consolas,"Andale  Mono","DejaVu Sans Mono",monospace
+    }
 
     /* portfolio */
 

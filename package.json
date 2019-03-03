@@ -13,14 +13,21 @@
   "author": "Ben Greenberg",
   "license": "ISC",
   "dependencies": {
+    "gray-matter": "^4.0.2",
+    "moment": "^2.24.0",
     "next": "^7.0.2",
+    "next-routes": "^1.4.2",
     "react": "^16.6.3",
     "react-country-flag": "^1.0.1",
     "react-dom": "^16.6.3",
     "react-emojione": "^5.0.0",
     "react-ga": "^2.5.5",
+    "react-markdown": "^4.0.6",
     "react-spinners": "^0.4.7",
     "react-typed": "^1.1.0"
   },
-  "heroku-run-build-script": true
+  "heroku-run-build-script": true,
+  "devDependencies": {
+    "raw-loader": "^1.0.0"
+  }
 }
