@@ -51,6 +51,10 @@ export default () => (
         padding: 10px 50px 0px 50px;
       }
 
+      ol li {
+        cursor: pointer;
+      }
+
       /* buttons */
 
       .button {
@@ -235,12 +239,6 @@ export default () => (
       grid-template-columns: 1fr 1fr;
       padding-bottom: 300px;
    
-    }
-    
-    .upcoming-wrapper {
-    }
-
-    .past-wrapper {
     }
 
     .upcoming-title {
