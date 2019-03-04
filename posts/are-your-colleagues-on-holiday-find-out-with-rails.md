@@ -250,11 +250,11 @@ You can create a Nexmo account for free, and as an added bonus, your account wil
 
 From the Nexmo Dashboard, click on the `Numbers` menu item on the left-hand menu. You will see three options appear:
 
-<img src="https://www.nexmo.com/wp-content/uploads/2019/02/Screen-Shot-2019-02-25-at-13.07.32.png" alt="" width="538" height="286" class="alignnone size-full wp-image-28364" />
+![](https://www.nexmo.com/wp-content/uploads/2019/02/Screen-Shot-2019-02-25-at-13.07.32.png)
 
 Click on the `Buy numbers` option and you will be directed to a page where you can choose a country, features, type, and four digits you would like the number to have.
 
-<img src="https://www.nexmo.com/wp-content/uploads/2019/02/buy_numbers_nexmo_dashboard.png" alt="" width="1618" height="300" class="alignnone size-full wp-image-28370" />
+![](https://www.nexmo.com/wp-content/uploads/2019/02/buy_numbers_nexmo_dashboard.png)
 
 For our purposes: pick the country that you are currently in, so that the call will be a local call for you; pick `Voice` for features and either mobile or land line for type. You do not need to enter anything for the `Number` text field. When you click `Search`, you will see a list of phone numbers available. 
 
@@ -266,7 +266,7 @@ You now own a Nexmo phone number. Our next step is to create an application in t
 
 From the left-hand menu, click on the `Voice` menu item. You will see the following four options under `APPLICATIONS`:
 
-<img src="https://www.nexmo.com/wp-content/uploads/2019/02/voice_menu_options_dashboard.png" alt="" width="510" height="426" class="alignnone size-full wp-image-28391" />
+![](https://www.nexmo.com/wp-content/uploads/2019/02/voice_menu_options_dashboard.png)
 
 Click on the `Create an application` option and you will be directed to a page where you can set up a new Nexmo application.
 
@@ -286,7 +286,7 @@ Now that we have both a Nexmo voice number and a Nexmo application, all that is 
 
 Click on the `Numbers` menu option in the left-hand menu and then click on `Your numbers`. You will be directed to a page listing the phone numbers you purchased, which, at this point, is the one number we just bought. Click on the gear icon on the right-hand side of the page adjacent to the number and a menu will pop up. The only step to complete here is to select your new application from the drop down list under the `Voice` area and press the blue `Ok` button.
 
-<img src="https://www.nexmo.com/wp-content/uploads/2019/02/configure_number_dashboard.png" alt="" width="1550" height="608" class="alignnone size-full wp-image-28397" />
+![](https://www.nexmo.com/wp-content/uploads/2019/02/configure_number_dashboard.png)
 
 You have now linked your new Nexmo voice number to your new Nexmo application, and with that last step, you are ready to run your application!
 
