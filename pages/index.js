@@ -22,7 +22,7 @@ class Index extends React.Component {
     return (
       <div>
         <div id="light-dark-mode-container" style={{'display': 'flex', 'justifyContent': 'center'}}>
-          <p><button className="fas fa-sun" onClick={()=> modeBtn()}>Light</button> | <button className="fas fa-moon" onClick={()=> modeBtn()}>Dark</button></p>
+          <p><button className="fas fa-sun" onClick={()=> modeBtn()}>&#9728; Light</button> | <button className="fas fa-moon" onClick={()=> modeBtn()}>&#9790; Dark</button></p>
         </div>
         <Head />
         <div className="wrapper">
