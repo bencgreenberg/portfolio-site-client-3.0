@@ -1,9 +1,7 @@
 import Link from 'next/link';
 import Head from '../components/head';
 import Header from '../components/header';
-import { getApiData } from '../logic/api_func';
-import ReactGA from 'react-ga';
-// import { ga_id } from '../config_vars';
+import { modeBtn } from '../logic/color_mode';
 
 class Index extends React.Component {
   constructor(props) {
@@ -17,17 +15,15 @@ class Index extends React.Component {
 
   render() {
 
-    // google analytics
-    //process.env.NODE_ENV == 'development' ? ReactGA.initialize(ga_id) : 
-    //ReactGA.initialize(ENV['ANALYTICS_ID'])
-    //ReactGA.pageview('/');
-
     console.log("Hi! Welcome to my portfolio site. If you're looking here, then you might be interested in checking out the GitHub repo at https://github.com/benhayehudi/portfolio-site-client-3.0. I designed this frontend utilizing Next.js, CSS Grid and Flexbox. The backend is my own Rails API service, and both the frontend and backend have been deployed on Heroku. If you have any feedback on the code I'd be glad to take a look at it, you can either DM me on Twitter or submit a PR. Thanks for stopping by!");
 
     console.log(process.env.NODE_ENV);
 
     return (
       <div>
+        <div id="light-dark-mode-container" style={{'display': 'flex', 'justifyContent': 'center'}}>
+          <p><button className="fas fa-sun" onClick={()=> modeBtn()}>Light</button> | <button className="fas fa-moon" onClick={()=> modeBtn()}>Dark</button></p>
+        </div>
         <Head />
         <div className="wrapper">
           <style jsx>{`

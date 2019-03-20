@@ -13,6 +13,48 @@ export default () => (
     </Head>
     <style jsx global>{`
      @import url('https://fonts.googleapis.com/css?family=Caveat:700|Chakra+Petch:500|Montserrat:700');
+      /* dark mode */
+      .dark {
+        transition: all 0.3s;
+        color: #FFFFFF !important;
+        background-image: none !important;
+        background-color: darkblue !important;
+        text-shadow: none !important;
+        box-shadow: none;
+      }
+
+      .dark a {
+        color: #FFFFFF !important;
+      }
+
+      .dark .button {
+        background-color: black !important;
+        color: white !important;
+      }
+
+      #light-dark-mode-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 0.6em;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+      }
+
+      #light-dark-mode-container button {
+        bckground: none !important;
+        color: inherit;
+        border: none;
+        padding: 0 !important;
+        font: inherit;
+      }
+
+      #light-dark-mode-container:hover {
+        color: blue;
+      }
+
       /* grid */
       .header {
         grid-area: header;
