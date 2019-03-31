@@ -152,7 +152,7 @@ In order for our application to communicate with the Nexmo Number Insight API, w
 
 To obtain your Nexmo API key and API secret, navigate to the [Nexmo Dashboard](https://dashboard.nexmo.com) and once you log in you will see your credentials near the top of the page. All you need to do is click on the eye icon to reveal the API secret. You can also click on the copy icon of each item to automatically copy them to the clipboard.
 
-<img src="https://www.nexmo.com/wp-content/uploads/2019/03/api_credentials.png" alt="" width="1032" height="244" class="alignnone size-full wp-image-28723" />
+![](https://www.nexmo.com/wp-content/uploads/2019/03/api_credentials.png)
 
 You are going to want to take advantage of the functionality of the `dotenv` gem you installed earlier, so create a file called `.env` in the root folder of your project. This is where we will store our Nexmo API credentials. Also, it is a good idea to add `.env` to a `.gitignore` file, if you have not done so already, to ensure that it is not committed to your version control history.
 
