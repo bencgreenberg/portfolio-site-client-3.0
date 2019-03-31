@@ -1,5 +1,5 @@
 ---
-title: Are you willing to be uncomfortable to support women developers?
+title: Get Information on Any Phone Number Globally with Rails and Nexmo
 date: 2019-03-26
 writtenBy: Ben Greenberg
 imageUrl: https://www.nexmo.com/wp-content/uploads/2019/03/NI-w-Rails-1200x600.png
