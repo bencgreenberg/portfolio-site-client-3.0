@@ -28,5 +28,15 @@ export const talks = [
     presentation_link: 'https://www.youtube.com/watch?list=PL0lo9MOBetEFqBue4vNcTEnkBjgIQU1Q3&v=NPE7rA5887c',
     conference_link: 'https://git-merge.com/',
     presented: true
+  },
+  {
+    title: 'From the Pulpit to Developer Relations',
+    date: '06/06/2019',
+    location: 'San Francisco, California',
+    country_code: 'US',
+    conference: 'DevRelCon SF',
+    presentation_link: '',
+    conference_link: 'https://sf2019.devrel.net/',
+    presented: false
   }
 ]
