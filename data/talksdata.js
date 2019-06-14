@@ -37,6 +37,6 @@ export const talks = [
     conference: 'DevRelCon SF',
     presentation_link: '',
     conference_link: 'https://sf2019.devrel.net/',
-    presented: false
+    presented: true
   }
 ]
