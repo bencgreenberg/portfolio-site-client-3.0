@@ -43,7 +43,7 @@ export const talks = [
     title: 'Open Source Is Not Just About Code',
     date: '10/04/2019',
     location: 'Punta Cana, Dominican Republic',
-    country_code: 'DR',
+    country_code: 'DO',
     conference: 'Caribbean Developers Conference',
     presentation_link: '',
     conference_link: 'https://cdc.dev/',
