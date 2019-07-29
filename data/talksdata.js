@@ -38,5 +38,25 @@ export const talks = [
     presentation_link: '',
     conference_link: 'https://sf2019.devrel.net/',
     presented: true
+  },
+  {
+    title: 'Open Source Is Not Just About Code',
+    date: '10/04/2019',
+    location: 'Punta Cana, Dominican Republic',
+    country_code: 'DR',
+    conference: 'Caribbean Developers Conference',
+    presentation_link: '',
+    conference_link: 'https://cdc.dev/',
+    presented: false
+  },
+  {
+    title: 'Building open source communities of starfish',
+    date: '11/13/2019',
+    location: 'San Francisco, California',
+    country_code: 'US',
+    conference: 'GitHub Universe',
+    presentation_link: '',
+    conference_link: 'https://githubuniverse.com',
+    presented: false
   }
 ]
