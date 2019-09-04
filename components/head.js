@@ -276,23 +276,9 @@ export default () => (
 
     /* talks */
 
-    .talks-wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding-bottom: 300px;
-   
-    }
+
 
     .upcoming-title {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1vw;
-    }
-
-    .past-title {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
