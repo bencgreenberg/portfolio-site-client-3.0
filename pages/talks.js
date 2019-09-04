@@ -13,45 +13,51 @@ class Talks extends React.Component {
   //ReactGA.initialize(ENV['ANALYTICS_ID'])
   //ReactGA.pageview('/talks');
 
-    let upcomingTalks = talks.filter(talk => {
-      return talk.presented == false
+    let talks2019 = talks.filter(talk => {
+      return talk.date.split('/')[2] == '2019'
     });
     
-    let pastTalks = talks.filter(talk => {
-      return talk.presented == true
+    let talks2018 = talks.filter(talk => {
+      return talk.date.split('/')[2] == '2018'
     });
     return (
       <div className="talks-body-wrapper">
         <Head />
         <div className="header">
             Talks
-          </div>
+        </div>
         <div className="talks-wrapper">
           <div className="upcoming-wrapper">
-            <div className="upcoming-title"><h1>Upcoming Talks</h1></div>
-            {upcomingTalks.length > 0 ? upcomingTalks.map(talk => { return <TalksCard 
-              title={talk.title} 
-              location={talk.location} 
-              date={talk.date} 
-              conference={talk.conference} 
-              presentation_link= {talk.presentation_link}
-              conference_link={talk.conference_link}
-              country_code={talk.country_code}
-              presented={talk.presented} />}) : "More talks coming soon!"
-            }
-          </div>
-          <div className="past-wrapper">
-          <div className="past-title"><h1>Past Talks</h1></div>
-            {pastTalks.map(talk => { return <TalksCard 
-              title={talk.title} 
-              location={talk.location} 
-              date={talk.date} 
-              conference={talk.conference} 
-              presentation_link= {talk.presentation_link}
-              conference_link={talk.conference_link}
-              country_code={talk.country_code}
-              presented={talk.presented} />})
-            }
+            <div className="upcoming-title">
+              <h1>2019</h1>
+            </div>
+            <ul>
+              {talks2019.length > 0 ? talks2019.map(talk => { return <TalksCard 
+                title={talk.title} 
+                location={talk.location} 
+                date={talk.date} 
+                conference={talk.conference} 
+                presentation_link= {talk.presentation_link}
+                conference_link={talk.conference_link}
+                country_code={talk.country_code}
+                presented={talk.presented} />}) : "More talks coming soon!"
+              }
+            </ul>
+            <div className="upcoming-title">
+              <h1>2018</h1>
+            </div>
+            <ul>
+              {talks2018.map(talk => { return <TalksCard 
+                title={talk.title} 
+                location={talk.location} 
+                date={talk.date} 
+                conference={talk.conference} 
+                presentation_link= {talk.presentation_link}
+                conference_link={talk.conference_link}
+                country_code={talk.country_code}
+                presented={talk.presented} />})
+              }
+            </ul>
           </div>
         </div>
         <div className="navbar box">
