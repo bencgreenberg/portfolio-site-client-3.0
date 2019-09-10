@@ -35,7 +35,7 @@ export const talks = [
     location: 'San Francisco, California',
     country_code: 'US',
     conference: 'DevRelCon SF',
-    presentation_link: '',
+    presentation_link: 'https://devrel.net/dev-rel/how-being-a-rabbi-prepared-me-for-dev-rel',
     conference_link: 'https://sf2019.devrel.net/',
     presented: true
   },
@@ -57,6 +57,16 @@ export const talks = [
     conference: 'GitHub Universe',
     presentation_link: '',
     conference_link: 'https://githubuniverse.com',
+    presented: false
+  },
+  {
+    title: 'What\'s love got to do with it? Ruby and Sentiment Analysis',
+    date: '11/18/2019',
+    location: 'Nashville, Tennessee',
+    country_code: 'US',
+    conference: 'RubyConf',
+    presentation_link: '',
+    conference_link: 'https://rubyconf.org',
     presented: false
   }
 ]
