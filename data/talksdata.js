@@ -47,7 +47,7 @@ export const talks = [
     conference: 'Caribbean Developers Conference',
     presentation_link: '',
     conference_link: 'https://cdc.dev/',
-    presented: false
+    presented: true
   },
   {
     title: 'Building open source communities of starfish',
@@ -57,7 +57,7 @@ export const talks = [
     conference: 'GitHub Universe',
     presentation_link: '',
     conference_link: 'https://githubuniverse.com',
-    presented: false
+    presented: true
   },
   {
     title: 'What\'s love got to do with it? Ruby and Sentiment Analysis',
@@ -67,6 +67,16 @@ export const talks = [
     conference: 'RubyConf',
     presentation_link: '',
     conference_link: 'https://rubyconf.org',
-    presented: false
+    presented: true
+  },
+  {
+    title: 'Roots for Advocates: Applying Community Organizing Principles to Developer Relations',
+    date: '12/10/2019',
+    location: 'London, England',
+    country_code: 'GB',
+    conference: 'DevRelCon London',
+    presentation_link: '',
+    conference_link: 'https://rubyconf.org',
+    presented: true
   }
 ]
