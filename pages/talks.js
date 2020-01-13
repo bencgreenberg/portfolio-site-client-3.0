@@ -13,6 +13,10 @@ class Talks extends React.Component {
   //ReactGA.initialize(ENV['ANALYTICS_ID'])
   //ReactGA.pageview('/talks');
 
+    let talks2020 = talks.filter(talk => {
+      return talk.date.split('/')[2] == '2020'
+    });
+
     let talks2019 = talks.filter(talk => {
       return talk.date.split('/')[2] == '2019'
     });
@@ -28,6 +32,21 @@ class Talks extends React.Component {
         </div>
         <div className="talks-wrapper">
           <div className="upcoming-wrapper">
+          <div className="upcoming-title">
+              <h1>2020</h1>
+            </div>
+            <ul>
+              {talks2020.length > 0 ? talks2020.map(talk => { return <TalksCard 
+                title={talk.title} 
+                location={talk.location} 
+                date={talk.date} 
+                conference={talk.conference} 
+                presentation_link= {talk.presentation_link}
+                conference_link={talk.conference_link}
+                country_code={talk.country_code}
+                presented={talk.presented} />}) : "More talks coming soon!"
+              }
+            </ul>
             <div className="upcoming-title">
               <h1>2019</h1>
             </div>
