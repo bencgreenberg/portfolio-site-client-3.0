@@ -65,18 +65,18 @@ export const talks = [
     location: 'Nashville, Tennessee',
     country_code: 'US',
     conference: 'RubyConf',
-    presentation_link: '',
+    presentation_link: 'https://www.youtube.com/watch?v=VREjv9ZTxPg',
     conference_link: 'https://rubyconf.org',
     presented: true
   },
   {
-    title: 'Roots for Advocates: Applying Community Organizing Principles to Developer Relations',
-    date: '12/10/2019',
-    location: 'London, England',
-    country_code: 'GB',
-    conference: 'DevRelCon London',
+    title: 'What\'s love got to do with it? Ruby and Sentiment Analysis',
+    date: '01/31/2020',
+    location: 'Birmingham, Alabama',
+    country_code: 'US',
+    conference: 'Birmingham on Rails',
     presentation_link: '',
-    conference_link: 'https://rubyconf.org',
-    presented: true
-  }
+    conference_link: 'https://birminghamonrails.com/',
+    presented: false
+  },
 ]
