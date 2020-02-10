@@ -2,16 +2,9 @@ import Head from '../components/head';
 import Link from 'next/link';
 import {talks} from '../data/talksdata';
 import TalksCard from '../components/talkscard';
-import ReactGA from 'react-ga';
-// import { ga_id } from '../config_vars';
 
 class Talks extends React.Component {
   render() {
-
-  // google analytics
-  //process.env.NODE_ENV == 'development' ? ReactGA.initialize(ga_id) :
-  //ReactGA.initialize(ENV['ANALYTICS_ID'])
-  //ReactGA.pageview('/talks');
 
     let talks2020 = talks.filter(talk => {
       return talk.date.split('/')[2] == '2020'
@@ -81,7 +74,6 @@ class Talks extends React.Component {
         </div>
         <div className="navbar box">
             <Link as="/" href="/"><a href="/" className="button">Home</a></Link>
-            <Link as="/portfolio" href="/portfolio"><a href="/portfolio" className="button">Portfolio</a></Link>
             <Link as="/posts" href="/posts"><a href="/posts" className="button">Blog</a></Link>
         </div>
       </div>

@@ -44,7 +44,6 @@ class Index extends React.Component {
             <Header />
           </div>
           <div className="navbar box">
-            <Link as="/portfolio" href="/portfolio"><a href="/portfolio" className="button">Portfolio</a></Link>
             <Link as="/posts" href="/posts"><a href="/posts" className="button">Blog</a></Link>
             <Link as="/talks" href="/talks"><a href="/talks" className="button">Talks</a></Link>
           </div>
