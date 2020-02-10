@@ -46,7 +46,6 @@ export default class extends React.Component {
                 </ol>
                 <div className="navbar box">
                     <Link as="/" href="/"><a href="/" className="button">Home</a></Link>
-                    <Link as="/portfolio" href="/portfolio"><a href="/portfolio" className="button">Portfolio</a></Link>
                     <Link as="/talks" href="/talks"><a href="/talks" className="button">Talks</a></Link>
                 </div>
             </>
