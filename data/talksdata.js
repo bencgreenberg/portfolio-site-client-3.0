@@ -77,6 +77,6 @@ export const talks = [
     conference: 'Birmingham on Rails',
     presentation_link: '',
     conference_link: 'https://birminghamonrails.com/',
-    presented: false
+    presented: true
   },
 ]
