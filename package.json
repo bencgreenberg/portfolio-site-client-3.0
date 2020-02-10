@@ -15,8 +15,9 @@
   "dependencies": {
     "gray-matter": "^4.0.2",
     "moment": "^2.24.0",
-    "next": "^7.0.2",
+    "next": "^9.2.1",
     "next-routes": "^1.4.2",
+    "npm": "^6.13.7",
     "react": "^16.6.3",
     "react-country-flag": "^1.0.1",
     "react-dom": "^16.6.3",
@@ -28,6 +29,8 @@
   },
   "heroku-run-build-script": true,
   "devDependencies": {
-    "raw-loader": "^1.0.0"
+    "raw-loader": "^1.0.0",
+    "set-value": ">=2.0.1",
+    "serialize-javascript": ">=2.1.1"
   }
 }
