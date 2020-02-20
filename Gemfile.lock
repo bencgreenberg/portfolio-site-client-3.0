@@ -116,7 +116,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 2.0)
   portfolio-site!
-  rake (~> 13.0)
+  rake
 
 BUNDLED WITH
    2.1.4
