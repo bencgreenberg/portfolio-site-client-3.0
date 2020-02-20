@@ -1,0 +1,12 @@
+---
+layout: default
+modal-id: 2
+date: 2019-06-06
+img: devrelconsf2019.png
+alt: image-alt
+project-date: June 2019
+conference: DevRelCon SF
+title: From the Pulpit to Developer Relations
+link: https://devrel.net/dev-rel/how-being-a-rabbi-prepared-me-for-dev-rel
+
+---

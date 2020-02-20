@@ -1,3 +1,9 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
 node_modules
-.next
-config_vars.js
+.env
+.DS_Store
+img/.DS_Store

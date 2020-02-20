@@ -1,41 +1,26 @@
-# Portfolio Site Client v3.0
+# Portfolio Site on Jekyll
 
-This is a responsive portfolio site frontend designed using Next.js, React, CSS Grid and Flexbox. It was designed to serve [bengreenberg.org](https://www.bengreenberg.org) but could be applied to other purposes as well. 
+This is a portfolio site built on Jekyll and a modified version of the [Freelancer Jekyll Theme](https://github.com/jeromelachaud/freelancer-theme).
 
-The folder structure is the following:
+* [Installation and Usage](#installation-and-usage)
+    * [Automated Blog Post Importing](#automated-blog-post-importing)
+* [License](#license)
 
-Logic:
-- Data is retrieved with `getApiData()` in `logic/api_func.js`
+## Installation and Usage
 
-Data:
-- An array of words for `react-typed` is contained in `greetingArray`
-- An array of objects of conference information is contained in `talksdata`
+To use this site for your own portfolio, follow these steps:
 
-Pages:
-- `index.js` is the Home page
-- `blog.js`, `portfolio.js` and `talks.js` are the three other pages
+1. Clone the repository to your local machine
+2. Run `bundle install` to install the dependencies
+3. Edit the various content files to suit your needs
+4. Run `jekyll serve` to boot up a server and serve your site on `localhost:4000`
 
-Static:
-- Images are housed here that are served in the application. So far that's one headshot and a `favicon.ico`
+### Automated Blog Post Importing
 
-Components:
-- Reusable components such as:
-  -- `<Head />`, `<ContentCard />`, `<Header />`, `<PortfolioCard />` and `<TalksCard />`
+This portfolio site uses a [GitHub Action](https://github.com/benhayehudi/dev-posts-to-jekyll-markdown-action) to automatically import new [DEV](https://dev.to) blog posts, import them into the `_posts` folder and create a pull request with them. 
 
-## Installation
-
-To run a local copy of this application do the following:
-
-1. Clone the repo to your local machine
-2. Run `npm install` to install the node dependencies
-3. Run `npm run dev` to run a local development instance
+You can find installation and usage instructions for that Action in its [README](https://github.com/benhayehudi/dev-posts-to-jekyll-markdown-action/blob/master/README.md).
 
 ## License
 
-This application is under the ISC License
-
-## Contributing
-
-Contributions to the code are welcome. First and foremost, please treat everyone with respect when discussing the code, the project or anything else really. 
-
-If you are fixing a bug feel free to make a PR directly. If you are proposing a feature modification or addition, please first raise it as an issue.
+This project's License is available [here](lICENSE).
