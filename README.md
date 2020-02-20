@@ -1,32 +1,19 @@
-Freelancer Jekyll theme  [![Build Status](https://api.travis-ci.org/jeromelachaud/freelancer-theme.svg?branch=master)](https://travis-ci.org/jeromelachaud/freelancer-theme/) 
-=========================
+# Portfolio Site on Jekyll
 
-Jekyll theme based on [Freelancer bootstrap theme ](http://startbootstrap.com/template-overviews/freelancer/)
+This is a portfolio site built on Jekyll and a modified version of the [Freelancer Jekyll Theme](https://github.com/jeromelachaud/freelancer-theme).
 
-## How to use
- - Place a image in `/img/portfolio/`
- - Replace `your-email@domain.com` in `_config.yml` with your email address. Refer to [formspree](http://formspree.io/) for more information.
- - Create posts to display your projects. Use the follow as an example:
-```txt
----
-layout: default
-modal-id: 1
-date: 2020-01-18
-img: cabin.png
-alt: image-alt
-project-date: January 2020
-client: The Client
-category: Web Development
-description: The description of the project
+* [Installation and Usage](#installation-and-usage)
+* [License](#license)
 
----
-```
+## Installation and Usage
 
-## Demo
-View this jekyll theme in action [here](https://jeromelachaud.com/freelancer-theme)
+To use this site for your own portfolio, follow these steps:
 
-## Screenshot
-![screenshot](https://raw.githubusercontent.com/jeromelachaud/freelancer-theme/master/screenshot.png)
+1. Clone the repository to your local machine
+2. Run `bundle install` to install the dependencies
+3. Edit the various content files to suit your needs
+4. Run `jekyll serve` to boot up a server and serve your site on `localhost:4000`
 
----------
-For more details, read the [documentation](http://jekyllrb.com/)
+## License
+
+This project's License is available [here](lICENSE).
