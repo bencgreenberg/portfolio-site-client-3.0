@@ -1,41 +1,32 @@
-# Portfolio Site Client v3.0
+Freelancer Jekyll theme  [![Build Status](https://api.travis-ci.org/jeromelachaud/freelancer-theme.svg?branch=master)](https://travis-ci.org/jeromelachaud/freelancer-theme/) 
+=========================
 
-This is a responsive portfolio site frontend designed using Next.js, React, CSS Grid and Flexbox. It was designed to serve [bengreenberg.org](https://www.bengreenberg.org) but could be applied to other purposes as well. 
+Jekyll theme based on [Freelancer bootstrap theme ](http://startbootstrap.com/template-overviews/freelancer/)
 
-The folder structure is the following:
+## How to use
+ - Place a image in `/img/portfolio/`
+ - Replace `your-email@domain.com` in `_config.yml` with your email address. Refer to [formspree](http://formspree.io/) for more information.
+ - Create posts to display your projects. Use the follow as an example:
+```txt
+---
+layout: default
+modal-id: 1
+date: 2020-01-18
+img: cabin.png
+alt: image-alt
+project-date: January 2020
+client: The Client
+category: Web Development
+description: The description of the project
 
-Logic:
-- Data is retrieved with `getApiData()` in `logic/api_func.js`
+---
+```
 
-Data:
-- An array of words for `react-typed` is contained in `greetingArray`
-- An array of objects of conference information is contained in `talksdata`
+## Demo
+View this jekyll theme in action [here](https://jeromelachaud.com/freelancer-theme)
 
-Pages:
-- `index.js` is the Home page
-- `blog.js`, `portfolio.js` and `talks.js` are the three other pages
+## Screenshot
+![screenshot](https://raw.githubusercontent.com/jeromelachaud/freelancer-theme/master/screenshot.png)
 
-Static:
-- Images are housed here that are served in the application. So far that's one headshot and a `favicon.ico`
-
-Components:
-- Reusable components such as:
-  -- `<Head />`, `<ContentCard />`, `<Header />`, `<PortfolioCard />` and `<TalksCard />`
-
-## Installation
-
-To run a local copy of this application do the following:
-
-1. Clone the repo to your local machine
-2. Run `npm install` to install the node dependencies
-3. Run `npm run dev` to run a local development instance
-
-## License
-
-This application is under the ISC License
-
-## Contributing
-
-Contributions to the code are welcome. First and foremost, please treat everyone with respect when discussing the code, the project or anything else really. 
-
-If you are fixing a bug feel free to make a PR directly. If you are proposing a feature modification or addition, please first raise it as an issue.
+---------
+For more details, read the [documentation](http://jekyllrb.com/)

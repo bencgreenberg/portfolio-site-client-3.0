@@ -1,0 +1,41 @@
+# Site settings
+title: Ben Greenberg. Developer Advocate.
+email: ben.greenberg@vonage.com
+url: https://bengreenberg.dev
+description: "Ben Greenberg is a developer advocate who specializes in making developers happy."
+skills: "Software Developer - Advocate - Educator"
+meta_author: Greenberg Ben
+
+# Contact form:
+# - static : pass through formspree.io to validate email sending
+# - disqus : replace contact form by disqus thread
+# - comment the line below if you want to stick with the default PHP contact form
+contact: static
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 18bc9c #80B3FF
+  primary-rgb: "24,288,156" #"128,179,255"
+  secondary: 2c3e50 #FD6E8A
+  secondary-dark: 233140 #A2122F
+
+# Footer settings
+footer:
+  copyright: Ben Greenberg
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/rabbigreenberg
+  - title: github
+    url: http://github.com/benhayehudi
+  - title: linkedin
+    url: https://www.linkedin.com/in/rabbigreenberg/
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Talks collection
+collections:
+  - talks

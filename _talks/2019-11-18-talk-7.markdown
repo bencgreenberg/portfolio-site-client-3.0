@@ -1,0 +1,12 @@
+---
+layout: default
+modal-id: 3
+date: 2019-11-18
+img: rubyconf2019.png
+alt: image-alt
+project-date: November 2018
+conference: RubyConf
+title: "What's Love Got To Do With It?"
+link: https://www.youtube.com/watch?v=VREjv9ZTxPg
+
+---

@@ -22,9 +22,7 @@ The application consists of a single page, `index.js`, that has a few components
 
 Within the `EvalText` component each word of the input is being evaluated against three separate arrays: male, female and gender neutral pronouns. A specific CSS styling is applied to the word if it is found in either the male or female pronouns array. Right now, nothing is being done with the gender neutral pronouns, but there is room there to do some other styling as well. 
 
-I have put up the code in a public Github repository and would love contributions.
-
-{% github benhayehudi/pronoun_highlighter %} 
+I have put up the code in a public [Github repository](https://github.com/benhayehudi/pronoun_highlighter) and would love contributions.
 
 There are a few open issues already of items I identified, specifically:
 
