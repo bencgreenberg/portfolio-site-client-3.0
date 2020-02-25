@@ -115,3 +115,7 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+
+Webdrivers.configure do |config|
+  config.proxy_port = '12209'
+end
