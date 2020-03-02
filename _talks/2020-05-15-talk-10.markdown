@@ -1,0 +1,12 @@
+---
+layout: default
+modal-id: 10
+date: 2020-05-15
+img: balkanruby2020.png
+alt: image-alt
+project-date: May 2020
+conference: "Balkan Ruby 2020"
+title: "Introducing Static Type Checking to an Existing Codebase"
+link: https://balkanruby.com/
+
+---
