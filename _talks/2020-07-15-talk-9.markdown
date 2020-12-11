@@ -1,12 +1,12 @@
 ---
 layout: default
 modal-id: 9
-date: 2020-07-15
-img: oscon2020.png
+date: 2020-07-02
+img: devrelcon2020.png
 alt: image-alt
 project-date: July 2020
-conference: "O'Reilly OSCON 2020"
-title: "Introducing Static Type Checking to an Existing Codebase"
-link: https://conferences.oreilly.com/oscon/oscon-or/public/schedule/detail/83453
+conference: "DevRelCon Earth 2020"
+title: "Roots for Advocates: Applying Community Organizing Principles to Developer Relations"
+link: https://www.youtube.com/watch?v=o07iRbFaAy0&feature=emb_title
 
 ---
