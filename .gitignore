@@ -8,3 +8,4 @@ node_modules
 .DS_Store
 img/.DS_Store
 _posts/.DS_Store
+.byebug_history
