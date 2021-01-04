@@ -1,3 +1,49 @@
 ---
 layout: default
+title: Home
 ---
+
+<section class="intro">
+  <center>
+      <img src="/assets/images/ben.jpg" style="border-radius: 50%"
+           height="90px" width="240px" alt="A picture of author.">
+      <br><br>
+      <h1 style="color:white">Hey, I'm <span>Ben Greenberg.</span></h1>
+      <br>
+      <h3 style="color: white;"> Developer Advocate and Educator</h3>
+      <br>
+      <a href="/about/" class="btn" style="color:white">View More about me</a>
+  </center>
+</section>
+
+<div class="container">
+  <div class="main-content">
+      <!-- Featured
+      ================================================== -->
+      <section class="featured-posts">
+          <div class="section-title">
+              <h2><span>Recent Blog Posts</span></h2>
+          </div>
+          <div class="row listfeaturedtag">
+              {% for post in site.posts %}
+              {% if post.featured == true %}
+              {% include featuredbox.html %}
+              {% endif %}
+              {% endfor %}
+          </div>
+      </section>
+
+      <section class="featured-posts">
+          <div class="section-title">
+              <h2><span>Recent Talks</span></h2>
+          </div>
+          <div class="row listfeaturedtag">
+              {% for post in site.talks %}
+              {% if post.featured == true %}
+              {% include featuredtalkbox.html %}
+              {% endif %}
+              {% endfor %}
+          </div>
+      </section>
+  </div>
+</div>
