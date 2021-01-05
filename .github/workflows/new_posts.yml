@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: dev-to-jekyll
-      uses: bencgreenberg/dev-posts-to-jekyll-markdown-action@main
+      uses: bencgreenberg/dev-posts-to-jekyll-markdown-action@fix-bugs
     env:
       GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
       DEV_API_KEY: "${{ secrets.DEV_API_KEY }}"
