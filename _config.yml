@@ -7,8 +7,8 @@ paginate: 6
 # baseurl: https://www.bengreenberg.dev
 email: 'ben.greenberg@vonage.com'
 google_analytics: UA-102303776-1
-disqus:
-sharethis:
+disqus: ben-greenberg
+sharethis: 5ff49e070b50bc00198f4409
 
 # Authors
 authors:
