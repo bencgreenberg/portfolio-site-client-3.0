@@ -2,7 +2,7 @@
 layout: post
 modal-id: 9
 date: 2021-01-23
-cover: https://res.cloudinary.com/practicaldev/image/fetch/s--_WnpHfrG--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/w0qanc3nx23u9rh6mvxh.png
+cover: https://dev-to-uploads.s3.amazonaws.com/i/w0qanc3nx23u9rh6mvxh.png
 alt: Cover Image
 title: 3 Things I Wish I Knew When I Switched Careers to Coding
 link: https://dev.to/bengreenberg/3-things-i-wish-i-knew-when-i-switched-careers-to-coding-po5
@@ -18,7 +18,7 @@ I look back at where I was when I first began this journey in 2017 and there are
 
 If you are just starting out in your first job, or you are still contemplating the move to software, I hope these insights I have learned will be helpful for you.
 
-## =¡ You Will Never Know Everything
+## You Will Never Know Everything
 
 I remember when I learned my first bit of code. I don't remember exactly what it was anymore, but I remember how it made me feel: Empowered and terrified, both at the same time!
 
@@ -38,7 +38,7 @@ In some other professions, the completion of the degree or the training signifie
 
 Now that I have fully come to appreciate that, I am a calmer developer, and I enjoy the learning journey even more.
 
-## =¡ What Is New Is Not Always Better
+## What Is New Is Not Always Better
 
 There is always something new in software development. New web frameworks. New languages. New CSS frameworks. New design patterns. New libraries and packages.
 
@@ -58,7 +58,7 @@ In many companies, you will find legacy applications that are still powering mul
 
 When I first started out, I thought for sure I would be joining that race of constantly chasing the shiniest new things. Yet, in my four years so far, I have had the privilege to work with mainly PHP and Ruby. By far, these are not the hottest new items in the developer community, but they are far more prevalent in the job market than one is led to believe by only reading blog posts and looking at conference schedules.
 
-## =¡ Interviewing Goes Both Ways
+## Interviewing Goes Both Ways
 
 I switched into coding after a relatively successful career in the clergy and in the non-profit sector. I had about a decade of work experience with me when I began my first job search as a newly minted coder. You would think that I had some self-confidence when I entered the interview room. Well, you would be wrong.
 
