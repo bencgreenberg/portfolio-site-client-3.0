@@ -2,6 +2,8 @@ source "https://rubygems.org"
 gemspec
 gem "rake"
 
+gem "dev_orbit"
+
 group :jekyll_plugins do
   gem "kramdown", ">= 2.3.0"
   gem 'jekyll-archives'
