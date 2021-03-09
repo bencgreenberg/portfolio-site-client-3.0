@@ -23,10 +23,11 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     colorator (1.1.0)
     concurrent-ruby (1.1.7)
-    dev_orbit (0.0.2)
+    dev_orbit (0.0.3)
       activesupport (~> 6.1)
       http (~> 4.4)
       json (~> 2.5)
+      thor (~> 1.1)
       zeitwerk (~> 2.4)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
@@ -136,6 +137,7 @@ GEM
       faraday (> 0.8, < 2.0)
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
+    thor (1.1.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unf (0.1.4)
@@ -149,7 +151,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 2.0)
-  dev_orbit
+  dev_orbit (~> 0.0.3)
   jekyll-archives
   jekyll-paginate
   jekyll-seo-tag
