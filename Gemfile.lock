@@ -31,7 +31,7 @@ GEM
     colorator (1.1.0)
     concurrent-ruby (1.1.7)
     crass (1.0.6)
-    dev_orbit (0.0.5)
+    dev_orbit (0.0.6)
       actionview (~> 6.1)
       activesupport (~> 6.1)
       http (~> 4.4)
@@ -169,7 +169,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 2.0)
-  dev_orbit (~> 0.0.5)
+  dev_orbit (~> 0.0.6)
   jekyll-archives
   jekyll-paginate
   jekyll-seo-tag
