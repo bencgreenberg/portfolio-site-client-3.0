@@ -2,7 +2,7 @@ source "https://rubygems.org"
 gemspec
 gem "rake"
 
-gem "dev_orbit", "~> 0.0.3"
+gem "dev_orbit", "~> 0.0.4"
 
 group :jekyll_plugins do
   gem "kramdown", ">= 2.3.0"
